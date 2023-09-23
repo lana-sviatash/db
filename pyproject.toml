@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hw-db"
+version = "0.1.0"
+description = ""
+authors = ["lana-sviatash <sviatash.s@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2 = "^2.9.7"
+logging = "^0.4.9.6"
+datetime = "^5.2"
+faker = "^19.6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
