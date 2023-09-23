@@ -25,7 +25,8 @@ def execute_query(query_file):
 
 
 if __name__ == '__main__':
-    query_files = [f for f in os.listdir('.') if (f.startswith('query') and f.endswith('.sql'))]
+    query_files = [os.path.join('queries', f) for f in os.listdir('queries') 
+                   if (f.startswith('query') and f.endswith('.sql'))]
 
     for query_file in query_files:
         print(f'Executing query from {query_file}...')
